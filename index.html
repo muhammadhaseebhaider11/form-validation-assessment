@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            background-color: grey;
+            }
+        .div2 {
+            background-color: #BFBFBF;
+            }
+        .div3 {
+            background-color: #E1E1E1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="div1" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Estate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        5-6 Passenger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        7 Passenger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        8 Passenger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        9 Passenger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        14 Passenger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        16passenger
+    </div>
+
+    <div class="div2">      
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-1" class="radio" checked onclick="if(document.getElementById('radio-1').checked===true){
+            document.getElementById('radio-2').checked=false;
+                document.getElementById('in-2').disabled=true
+            }if(document.getElementById('in-1').disabled===true){document.getElementById('in-1').disabled=false}" />
+        <input id='in-1' type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-3" class="radio" checked onclick="if(document.getElementById('radio-3').checked===true){
+            document.getElementById('radio-4').checked=false;
+                document.getElementById('in-4').disabled=true
+            }if(document.getElementById('in-3').disabled===true){document.getElementById('in-3').disabled=false}" />       
+        <input type="number" id="in-3" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-5" class="radio" checked onclick="if(document.getElementById('radio-5').checked===true){
+            document.getElementById('radio-6').checked=false;
+                document.getElementById('in-6').disabled=true
+            }if(document.getElementById('in-5').disabled===true){document.getElementById('in-5').disabled=false}" />
+        <input type="number" id="in-5" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-7" class="radio" checked onclick="if(document.getElementById('radio-7').checked===true){
+            document.getElementById('radio-8').checked=false;
+                document.getElementById('in-8').disabled=true
+            }if(document.getElementById('in-7').disabled===true){document.getElementById('in-7').disabled=false}" />
+        <input type="number"  id="in-7" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-9" class="radio" checked onclick="if(document.getElementById('radio-9').checked===true){
+            document.getElementById('radio-10').checked=false;
+                document.getElementById('in-10').disabled=true
+            }if(document.getElementById('in-9').disabled===true){document.getElementById('in-9').disabled=false}" />
+        <input type="number" id="in-9" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-11" class="radio" checked onclick="if(document.getElementById('radio-11').checked===true){
+            document.getElementById('radio-12').checked=false;
+                document.getElementById('in-12').disabled=true
+            }if(document.getElementById('in-11').disabled===true){document.getElementById('in-11').disabled=false}" />
+        <input type="number" id="in-11" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>% 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-13" class="radio" checked  onclick="if(document.getElementById('radio-13').checked===true){
+            document.getElementById('radio-14').checked=false;
+                document.getElementById('in-14').disabled=true
+            }if(document.getElementById('in-13').disabled===true){document.getElementById('in-13').disabled=false}" />
+        <input type="number" id="in-13" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" min="0" max="100" oninput="validity.valid||(value='');"/>%
+    </div>
+    
+    
+    <div class="div3">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+        <input type="checkbox" id="radio-2" class="radio" onclick="if(document.getElementById('radio-2').checked===true){
+            document.getElementById('radio-1').checked=false;
+                document.getElementById('in-1').disabled=true;
+            }if(document.getElementById('in-2').disabled===true){document.getElementById('in-2').disabled=false}"/>        
+        <input type="number" id="in-2" pattern="/^-?\d+\.?\d*$/" disabled  onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');"  /> £        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-4" class="radio" onclick="if(document.getElementById('radio-4').checked===true){
+            document.getElementById('radio-3').checked=false;
+                document.getElementById('in-3').disabled=true;
+            }if(document.getElementById('in-4').disabled===true){document.getElementById('in-4').disabled=false}"/>        
+        <input type="number"  id="in-4" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£&nbsp;&nbsp;       
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-6" class="radio" onclick="if(document.getElementById('radio-6').checked===true){
+            document.getElementById('radio-5').checked=false;
+                document.getElementById('in-5').disabled=true;
+            }if(document.getElementById('in-6').disabled===true){document.getElementById('in-6').disabled=false}"/>
+        <input type="number" id="in-6" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-8" class="radio" onclick="if(document.getElementById('radio-8').checked===true){
+            document.getElementById('radio-7').checked=false;
+                document.getElementById('in-7').disabled=true;
+            }if(document.getElementById('in-8').disabled===true){document.getElementById('in-8').disabled=false}"/>
+        <input type="number" id="in-8" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-10" class="radio" onclick="if(document.getElementById('radio-10').checked===true){
+            document.getElementById('radio-9').checked=false;
+                document.getElementById('in-9').disabled=true;
+            }if(document.getElementById('in-10').disabled===true){document.getElementById('in-10').disabled=false}"/>
+        <input type="number"  id="in-10" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-12" class="radio" onclick="if(document.getElementById('radio-12').checked===true){
+            document.getElementById('radio-11').checked=false;
+                document.getElementById('in-11').disabled=true;
+            }if(document.getElementById('in-12').disabled===true){document.getElementById('in-12').disabled=false}"/>
+        <input type="number" id="in-12" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="radio-14" class="radio" onclick="if(document.getElementById('radio-14').checked===true){
+            document.getElementById('radio-13').checked=false;
+                document.getElementById('in-13').disabled=true;
+            }if(document.getElementById('in-14').disabled===true){document.getElementById('in-14').disabled=false}"/>
+        <input type="number" id="in-14" pattern="/^-?\d+\.?\d*$/"  disabled onKeyPress="if(this.value.length==3) return false;" min="0" max="999" oninput="validity.valid||(value='');" />£
+    </div>
+    
+</body>
+</html>
